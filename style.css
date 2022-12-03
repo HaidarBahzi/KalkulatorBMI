@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+:root {
+  --font-google-bangers: "Bangers", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--font-google-bangers);
+  font-size: 10vh;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2vh;
+}
+
+.form {
+  color: white;
+  background-color: black;
+  width: 35%;
+  height: 80%;
+  border-top: 5px solid red;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5vh;
+  flex-direction: column;
+  padding-bottom: 5vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: 5vh;
+  outline: none;
+  transition: 0.1s ease outline;
+}
+
+input[type="number"]:focus {
+  outline: 2.5px solid red;
+}
+
+button {
+  color: white;
+  padding: 1vh 25vh;
+  border-radius: 100vmax;
+  font-size: 2.75vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  background-color: red;
+  border: 2px solid red;
+  transition: 0.5s ease background-color;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* responsive mobile */
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 5vh;
+  }
+
+  .form {
+    width: 40vh;
+  }
+
+  input {
+    width: 35vh;
+  }
+
+  button {
+    width: 35vh;
+    padding: 1vh;
+  }
+}
