@@ -90,7 +90,7 @@ button:hover {
 
 /* responsive mobile */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 5vh;
   }
