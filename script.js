@@ -3,8 +3,7 @@ document.getElementById("btn-submit").addEventListener("click", Hitung);
 function Hitung() {
   const tinggi = document.getElementById("input-height").value / 100;
   const berat = document.getElementById("input-weight").value;
-  const tinggiKuadrat = tinggi * tinggi;
-  const result = berat / tinggiKuadrat;
+  const result = berat / tinggi ** 2;
 
   // logic if result
 
